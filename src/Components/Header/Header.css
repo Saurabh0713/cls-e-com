@@ -1,0 +1,27 @@
+
+.bi-shop{
+    /* border: 2px solid rebeccapurple; */
+    margin: 0 10px 0 0px;
+    width: 35px;
+    height: 35px;
+    
+}
+.navbar-nav{
+    /* border: 2px solid rebeccapurple; */
+    font-weight: bold;
+}
+.nav-item{
+    /* border: 2px solid red; */
+    width: 76px;
+    background-color: royalblue;
+    border-radius: 15px;
+    padding: 0 2px;
+    margin: 0 5px;
+}
+.nav-link{
+    /* border: 2px solid greenyellow; */
+    color: antiquewhite !important;
+}
+#navbarNav{
+    justify-content: end;
+}
