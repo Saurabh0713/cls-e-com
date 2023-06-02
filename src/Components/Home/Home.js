@@ -1,30 +1,53 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react';
 import Productcard from '../ProductCard/Productcard';
 import './Home.css';
 import iphone14 from "../../Images/iph14.jpg";
 import ipad from "../../Images/ipad.png";
 import mair from "../../Images/mbookair.jpg";
 import mpro from "../../Images/mbookpro.jpg";
+import GoToCart from '../Cart/GoToCart';
 
-function Home() {
-  // const [learningstat,setlearningstat] = useState("enter state");
-  // function handleclk(){
-  //   setlearningstat("setting state")
-  // }
+// import { mydata } from '../../Product'; // for importing json object from js file in src
+
+function Home(props) {
  
+  const [product, setProductState] = useState([])
+  
+  useEffect(()=>{
+    fetch("Product.json")
+    .then(res=>res.json())
+    .then((res)=> {
+      console.log(JSON.stringify(res))
+      setProductState(res);
+      
+    });
+  },[])
+  
+  const [cartItemsCollection,updateCartItemsCollection] = useState([])
+  
+  function setCartProductFunction(value){
+    cartItemsCollection.push(value)
+    // console.log(cartItemsCollection,"collllllllll")
+    props.setCartProductHome(cartItemsCollection)
+  }
+  // function checkstat(){
+  //   console.log(cartProduct,"in homeeeee")
+  // }
+
   return (
-    <div className='home-main my-0'>
+ {product} && <div className='home-main my-0 mt-5 min-vh-100'>
       <h4 className='mx-3 my-3 text-light'>Apple Products</h4>
+      {/* <button onClick={checkstat}>check home</button> */}
+     
       <div className='productContainer'>
-    <Productcard buy="Buy now" productName="Mackbook Pro" productPrice="Rs 349000" imgLink={mpro} />
-    <Productcard buy="Buy now" productName="Mackbook Air" productPrice="Rs 129000" imgLink={mair}/>
-    <Productcard buy="Buy now" productName="Ipad" productPrice="Rs 69000" imgLink={ipad}/>
-    <Productcard buy="Buy now" productName="Iphone 14" productPrice="Rs 149000" imgLink={iphone14} />
-    <Productcard buy="Buy now" productName="Mackbook Pro" productPrice="Rs 349000" imgLink={mpro} />
-    <Productcard buy="Buy now" productName="Mackbook Air" productPrice="Rs 129000" imgLink={mair}/>
-    <Productcard buy="Buy now" productName="Ipad" productPrice="Rs 69000" imgLink={ipad}/>
-    <Productcard buy="Buy now" productName="Iphone 14" productPrice="Rs 149000" imgLink={iphone14} />
-    {/* <button onClick={handleclk} className='btn btn-primary'>{learningstat}</button> */}
+     {
+      product.map((value,index)=>(
+        <div key={index} className='rounded m-3'>
+        <Productcard productName={value.name} productPrice={value.price} imgLink={value.image} productDetail={value.detail} setCartProduct={setCartProductFunction}/>
+        </div>
+      ))
+      }
+
     </div>
     </div>
   )

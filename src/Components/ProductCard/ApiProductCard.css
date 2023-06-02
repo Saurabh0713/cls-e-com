@@ -1,0 +1,35 @@
+.mycard{
+    width: 300px !important;
+    height: 600px !important;
+    margin: 10px;
+   
+}
+.mycard-body{
+    background-color: rgb(226, 234, 234) !important;
+}
+.mycard-img-top{
+    width: 90% !important;
+    height: 200px !important;
+    margin-top: 10px;
+}
+.mycard-text{
+    font-size: 13px !important;
+    /* border: 2px solid red; */
+    height: 100px !important;
+    overflow-y: scroll;
+}
+.mycard svg{
+    color: goldenrod !important;
+}
+*{
+    /* border: 2px solid rebeccapurple; */
+}
+
+.name{
+    /* height: 100px; */
+    font-size: 18px;
+}
+.count{
+    font-size: 10px !important;
+    margin-left: 6px !important;
+}

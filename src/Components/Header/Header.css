@@ -10,14 +10,13 @@
     /* border: 2px solid rebeccapurple; */
     font-weight: bold;
 }
-.nav-item{
-    /* border: 2px solid red; */
+/* .nav-item{
     width: 76px;
     background-color: royalblue;
     border-radius: 15px;
     padding: 0 2px;
     margin: 0 5px;
-}
+} */
 .nav-link{
     /* border: 2px solid greenyellow; */
     color: antiquewhite !important;
