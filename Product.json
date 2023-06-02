@@ -1,0 +1,102 @@
+
+ [
+    {
+        "name":"Macbook Pro",
+        "quantity":"1",
+        "price":"345000",
+        "detail":"8 GB/512 GB SSD/Mac OS Big Sur MYD92HN/A",
+        "image":"https://media.croma.com/image/upload/v1663414264/Croma%20Assets/Computers%20Peripherals/Laptop/Images/230960_0_i4v0xl.png"
+    },
+    {
+        "name":"Macbook Air",
+        "quantity":"1",
+        "price":"145000",
+        "detail":"16 GB/512 GB SSD/Mac OS Monterey",
+        "image":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1653084303665"
+    },
+    {
+        "name":"iPad",
+        "quantity":"1",
+        "price":"55000",
+        "detail":"64 GB ROM 10.9 inch with Wi-Fi+5G",
+        "image":"https://itechstore.co.in/wp-content/uploads/2021/05/IN_r1443_WiFI_PDP_Image_Position-2_Space_Grey.jpg"
+    },
+    {
+        "name":"iPhone 14",
+        "quantity":"1",
+        "price":"145000",
+        "detail":"A15 Bionic Chip, 6 Core Processor Processor",
+        "image":"https://m.media-amazon.com/images/I/71emcsxsRPL._SX522_.jpg"
+    },
+    {
+        "name":"Macbook Pro",
+        "quantity":"1",
+        "price":"345000",
+        "detail":"8 GB/512 GB SSD/Mac OS Big Sur MYD92HN/A",
+        "image":"https://media.croma.com/image/upload/v1663414264/Croma%20Assets/Computers%20Peripherals/Laptop/Images/230960_0_i4v0xl.png"
+    },
+    {
+        "name":"Macbook Air",
+        "quantity":"1",
+        "price":"145000",
+        "detail":"16 GB/512 GB SSD/Mac OS Monterey",
+        "image":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1653084303665"
+    },
+    {
+        "name":"iPad",
+        "quantity":"1",
+        "price":"55000",
+        "detail":"64 GB ROM 10.9 inch with Wi-Fi+5G",
+        "image":"https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg "
+    },
+    {
+        "name":"iPhone 14",
+        "quantity":"1",
+        "price":"145000",
+        "detail":"A15 Bionic Chip, 6 Core Processor Processor",
+        "image":"https://m.media-amazon.com/images/I/71emcsxsRPL._SX522_.jpg"
+    },
+    {
+        "name":"Macbook Pro",
+        "quantity":"1",
+        "price":"345000",
+        "detail":"8 GB/512 GB SSD/Mac OS Big Sur MYD92HN/A",
+        "image":"https://media.croma.com/image/upload/v1663414264/Croma%20Assets/Computers%20Peripherals/Laptop/Images/230960_0_i4v0xl.png"
+    },
+    {
+        "name":"Macbook Air",
+        "quantity":"1",
+        "price":"145000",
+        "detail":"16 GB/512 GB SSD/Mac OS Monterey",
+        "image":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1653084303665"
+    },
+    {
+        "name":"iPad",
+        "quantity":"1",
+        "price":"55000",
+        "detail":"64 GB ROM 10.9 inch with Wi-Fi+5G",
+        "image":"https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg "
+    },
+    {
+        "name":"iPhone 14",
+        "quantity":"1",
+        "price":"145000",
+        "detail":"A15 Bionic Chip, 6 Core Processor Processor",
+        "image":"https://m.media-amazon.com/images/I/71emcsxsRPL._SX522_.jpg"
+    },
+    {
+        "name":"iPhone 14",
+        "quantity":"1",
+        "price":"145000",
+        "detail":"A15 Bionic Chip, 6 Core Processor Processor",
+        "image":"https://m.media-amazon.com/images/I/71emcsxsRPL._SX522_.jpg"
+    },
+    {
+        "name":"iPad",
+        "quantity":"1",
+        "price":"55000",
+        "detail":"64 GB ROM 10.9 inch with Wi-Fi+5G",
+        "image":"https://www.apple.com/v/ipad-10.9/b/images/overview/hero/hero__ecv967jz1y82_large.jpg "
+    }
+    ]
+  
