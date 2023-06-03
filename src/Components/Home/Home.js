@@ -7,21 +7,21 @@ import mair from "../../Images/mbookair.jpg";
 import mpro from "../../Images/mbookpro.jpg";
 import GoToCart from '../Cart/GoToCart';
 
-// import { mydata } from '../../Product'; // for importing json object from js file in src
+import { mydata as product} from '../../Product'; // for importing json object from js file in src
 
 function Home(props) {
  
-  const [product, setProductState] = useState([])
+  // const [product, setProductState] = useState([])
   
-  useEffect(()=>{
-    fetch("Product.json")
-    .then(res=>res.json())
-    .then((res)=> {
-      console.log(JSON.stringify(res))
-      setProductState(res);
-      
-    });
-  },[])
+  // useEffect(()=>{
+  //   fetch("Product.json")
+  //   .then(res=>res.json())
+  //   .then((res)=> {
+  //     console.log(JSON.stringify(res))
+  //     setProductState(res);
+  //     // console.log(res);
+  //   });
+  // },[])
   
   const [cartItemsCollection,updateCartItemsCollection] = useState([])
   
@@ -38,7 +38,6 @@ function Home(props) {
  {product} && <div className='home-main my-0 mt-5 min-vh-100'>
       <h4 className='mx-3 my-3 text-light'>Apple Products</h4>
       {/* <button onClick={checkstat}>check home</button> */}
-     
       <div className='productContainer'>
      {
       product.map((value,index)=>(

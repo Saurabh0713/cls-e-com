@@ -21,7 +21,7 @@ const [cartProduct,getCartProduct] = useState([])
 
   return (
     <BrowserRouter>
-    <div className="App">
+    <div className="App min-vh-100">
      <Header shopname="Apple Store" />
      <Routes>
       <Route path='/' element={<Home setCartProductHome={getCartProduct}/>}></Route>
