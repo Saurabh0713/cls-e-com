@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cls-e-com/static/css/main.24cfebfe.css",
-    "main.js": "/cls-e-com/static/js/main.102c0642.js",
+    "main.js": "/cls-e-com/static/js/main.5b91e00c.js",
     "static/js/787.2986ca50.chunk.js": "/cls-e-com/static/js/787.2986ca50.chunk.js",
     "static/media/ipad.png": "/cls-e-com/static/media/ipad.a32a1a0822b51b23f6ef.png",
     "static/media/mbookpro.jpg": "/cls-e-com/static/media/mbookpro.fb8fb5af05a6f3547212.jpg",
@@ -10,11 +10,11 @@
     "static/media/iph14.jpg": "/cls-e-com/static/media/iph14.60597b38af05180ec35d.jpg",
     "index.html": "/cls-e-com/index.html",
     "main.24cfebfe.css.map": "/cls-e-com/static/css/main.24cfebfe.css.map",
-    "main.102c0642.js.map": "/cls-e-com/static/js/main.102c0642.js.map",
+    "main.5b91e00c.js.map": "/cls-e-com/static/js/main.5b91e00c.js.map",
     "787.2986ca50.chunk.js.map": "/cls-e-com/static/js/787.2986ca50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24cfebfe.css",
-    "static/js/main.102c0642.js"
+    "static/js/main.5b91e00c.js"
   ]
 }
