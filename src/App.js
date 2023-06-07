@@ -25,6 +25,7 @@ const [cartProduct,getCartProduct] = useState([])
      <Header shopname="Apple Store" />
      <Routes>
       <Route path='/' element={<Home setCartProductHome={getCartProduct}/>}></Route>
+      <Route path='/cls-e-com' element={<Home setCartProductHome={getCartProduct}/>}></Route>
       <Route path='/ecom' element={<ApiProducts/>}></Route>
       <Route path='/register' element={<Register/>}></Route>
       <Route path='/signin' element={<SignIn/>}></Route>
