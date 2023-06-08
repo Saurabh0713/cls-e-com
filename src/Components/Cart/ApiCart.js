@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CartProductCard from "./CartProductCard";
+import ApiCartCard from "./ApiCartCard";
 
 export default function ApiCart() {
 
@@ -18,7 +18,7 @@ useEffect(()=>{
       <div className="list-group">
         {items.map((value, index) => (
           <div key={index} className="rounded">
-            <CartProductCard
+            <ApiCartCard
               img={value.image}
               name={value.title}
               price={value.price}
