@@ -24,8 +24,8 @@ const handleRemoveItem=()=>{
   return (
     <div className='my-1'>
          <div href="#" className="list-group-item list-group-item-action d-flex" aria-current="true">
-    <div className=''  style={{width:"100px",height:"100px"}}>
-      <img className='rounded-5' src={props.img} style={{width:"90px",height:"0px"}}></img>
+    <div className='mx-2'  style={{width:"100px",height:"100px"}}>
+      <img className='rounded-1' src={props.img} style={{width:"80px",height:"90px"}}></img>
     </div>
     <div className="w-50 pt-2 justify-content-between">
       <h5 className="">{props.name}</h5>
