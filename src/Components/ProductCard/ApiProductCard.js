@@ -17,6 +17,14 @@ export default function ApiProductCard(props) {
       localStorage.setItem("cart",JSON.stringify(cartItems))
     }else{
       let cartItems = JSON.parse(cart)
+      for(let i=0;i<cartItems.length;i++) {
+        if(cartItems[i].title == props.title){
+          console.log(cartItems[i])
+          console.log(i)
+          alert("Already Added To Cart")
+          return
+        }
+      }
       cartItems.push(props);
       localStorage.setItem("cart",JSON.stringify(cartItems))
     }
@@ -32,7 +40,7 @@ export default function ApiProductCard(props) {
   // console.log(starsArr)
 
   return (
-    <div className="card mycard my-4">
+    <div className="card mycard">
       <img
         src={props.image}
         className="card-img-top mycard-img-top"
@@ -41,7 +49,7 @@ export default function ApiProductCard(props) {
       <hr />
       <div className="card-body mycard-body">
         <h5 className="card-title name">{props.title}</h5>
-        <h6 className="card-title">${props.price}</h6>
+        <h6 className="card-title">Price: ${props.price}</h6>
         <div className="d-flex m-2 align-items-center">
           {starsArr.map((value, index) => (
             <svg
@@ -61,10 +69,10 @@ export default function ApiProductCard(props) {
         <p className="card-text mycard-text text-secondary">
           {props.description}
         </p>
-        <button className="btn btn-warning mb-2" onClick={handleAddToCart}>
+        <button className="btn btn-primary mb-2" onClick={handleAddToCart}>
           Add to cart
         </button>
-        <button className="btn btn-primary" onClick={handleCartClick}>Go to cart</button>
+        <button className="btn btn-warning" onClick={handleCartClick}>Go to cart</button>
       </div>
     </div>
   );

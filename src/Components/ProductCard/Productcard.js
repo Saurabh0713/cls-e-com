@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 function Productcard(props) {
  
-  const navigateBuyNow = useNavigate()
+  const navigateTo = useNavigate()
   const [AddToCart,setAddToCart] = useState("Add to cart");
 
   const handleAddToCartClick=()=>{
@@ -27,11 +27,13 @@ function Productcard(props) {
           <h5 className="card-title">{props.productName}</h5>
           <p className="card-text price">&#8377; {props.productPrice}</p>
           <p className="card-text detail">{props.productDetail}</p>
-          <button onClick={()=>{props.setCartProduct(props);navigateBuyNow("/buynow")}} className="btn btn-primary">
+          <button onClick={()=>{props.setCartProduct(props);navigateTo("/buynow")}} className="btn btn-primary">
             Buy Now
           </button>
-          <button className="btn btn-warning my-2 addcart" onClick={handleAddToCartClick}>{AddToCart}</button>
-       
+          {/* <div className="d-flex justify-content-evenly"> */}
+          <button className="btn btn-warning my-2 cartBtn" onClick={handleAddToCartClick}>{AddToCart}</button>
+          {/* <button className="btn btn-warning my-2 px-1 cartBtn" onClick={()=>{navigateTo("/cart")}}>Go To Cart</button> */}
+          {/* </div> */}
         </div>
       </div>
   );

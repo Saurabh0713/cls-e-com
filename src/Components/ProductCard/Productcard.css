@@ -1,10 +1,10 @@
 .card{
     width: 240px;
     margin: 20px;
-    height: 460px !important;
+    height: 454px !important;
 }
 img{
-    width: 100% !important;
+    width: 90% !important;
     height: 40%;
     margin: auto;
 }

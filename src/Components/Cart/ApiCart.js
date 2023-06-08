@@ -11,7 +11,22 @@ useEffect(()=>{
   updateItems(cartItem)
   console.log(cartItem)
 },[])
-    
+   
+const handleRemoveItem=(productName)=>{
+  let cartItem = localStorage.getItem("cart")
+  console.log(typeof cartItem)
+  cartItem = JSON.parse(cartItem)
+  for(let i=0;i<cartItem.length;i++) {
+    if(cartItem[i].title == productName){
+      console.log(cartItem[i])
+      console.log(i)
+      cartItem.splice(i,1)
+    }
+  }  
+  updateItems(cartItem)
+  localStorage.setItem("cart",JSON.stringify(cartItem))
+}
+
   return (
     <div className="container min-vh-100 mt-5 pt-4">
         <h3 className="text-light">API Cart</h3>
@@ -23,7 +38,7 @@ useEffect(()=>{
               name={value.title}
               price={value.price}
               // setCartPrice={findTotalCartPrice}
-              // deleteCartProduct={deleteCartProduct}
+              deleteCartProduct={handleRemoveItem}
               index={index}
             />
           </div>

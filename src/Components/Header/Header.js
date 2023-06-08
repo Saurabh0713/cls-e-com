@@ -21,7 +21,7 @@ function Header(props) {
 
   return (
     <div className="header fixed-top">
-      <nav className="navbar navbar-expand-lg bg-dark">
+      <nav className="navbar navbar-expand-md bg-dark">
         <div className="container-fluid">
           <svg
             xmlns="http://www.w3.org/2000/svg"

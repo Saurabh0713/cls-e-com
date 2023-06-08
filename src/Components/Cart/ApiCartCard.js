@@ -5,10 +5,10 @@ export default function (props) {
 const [quantity,updateQuantity] = useState(1)
 const [totalPrice,setTotalPrice] = useState(props.price)
 
-// useEffect(()=>{
-//  updateQuantity(1)
-//   setTotalPrice(props.price * quantity)
-// },[props])
+useEffect(()=>{
+ updateQuantity(1)
+  setTotalPrice(props.price)
+},[props])
 
 function handleQuantityChange(value){
   // console.log(value)
@@ -16,10 +16,7 @@ function handleQuantityChange(value){
   setTotalPrice(Number(props.price)*value)
 }
 
-const handleRemoveItem=()=>{
-  
-  
-}
+
 
   return (
     <div className='my-1'>
@@ -39,7 +36,7 @@ const handleRemoveItem=()=>{
     </div>
     <div>
     <p className='m-2'>Total price : {totalPrice} </p>
-    <button className='btn btn-danger m-2 p-1' style={{maxWidth:"80px",height:"max-content"}} onClick={handleRemoveItem}>Remove</button>
+    <button className='btn btn-danger m-2 p-1' style={{maxWidth:"80px",height:"max-content"}} onClick={()=>props.deleteCartProduct(props.name)}>Remove</button>
     </div>
   </div>
     </div>
