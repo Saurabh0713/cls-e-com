@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cls-e-com/static/css/main.24cfebfe.css",
-    "main.js": "/cls-e-com/static/js/main.f3e65846.js",
+    "main.css": "/cls-e-com/static/css/main.93825f19.css",
+    "main.js": "/cls-e-com/static/js/main.526c1f92.js",
     "static/js/787.2986ca50.chunk.js": "/cls-e-com/static/js/787.2986ca50.chunk.js",
     "static/media/ipad.png": "/cls-e-com/static/media/ipad.a32a1a0822b51b23f6ef.png",
     "static/media/mbookpro.jpg": "/cls-e-com/static/media/mbookpro.fb8fb5af05a6f3547212.jpg",
@@ -9,12 +9,12 @@
     "static/media/alogo.png": "/cls-e-com/static/media/alogo.5162cb124464dd2baace.png",
     "static/media/iph14.jpg": "/cls-e-com/static/media/iph14.60597b38af05180ec35d.jpg",
     "index.html": "/cls-e-com/index.html",
-    "main.24cfebfe.css.map": "/cls-e-com/static/css/main.24cfebfe.css.map",
-    "main.f3e65846.js.map": "/cls-e-com/static/js/main.f3e65846.js.map",
+    "main.93825f19.css.map": "/cls-e-com/static/css/main.93825f19.css.map",
+    "main.526c1f92.js.map": "/cls-e-com/static/js/main.526c1f92.js.map",
     "787.2986ca50.chunk.js.map": "/cls-e-com/static/js/787.2986ca50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24cfebfe.css",
-    "static/js/main.f3e65846.js"
+    "static/css/main.93825f19.css",
+    "static/js/main.526c1f92.js"
   ]
 }
