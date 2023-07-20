@@ -10,7 +10,7 @@ function Productcard(props) {
   const handleAddToCartClick=()=>{
     if(AddToCart==="Add to cart"){
       setAddToCart("Added to cart")
-      // props.setCartProduct(props)
+      props.setCartProduct(props)
     }
   //  console.log(props,"in productcarddddddd")
   }
@@ -27,7 +27,9 @@ function Productcard(props) {
           <h5 className="card-title">{props.productName}</h5>
           <p className="card-text price">&#8377; {props.productPrice}</p>
           <p className="card-text detail">{props.productDetail}</p>
-          <button onClick={()=>{props.setCartProduct(props);navigateTo("/buynow")}} className="btn btn-primary">
+          <button 
+          onClick={()=>{props.setCartProduct(props);navigateTo("/cart")}} 
+          className="btn btn-primary">
             Buy Now
           </button>
           {/* <div className="d-flex justify-content-evenly"> */}
