@@ -10,7 +10,7 @@ function Productcard(props) {
   const handleAddToCartClick=()=>{
     if(AddToCart==="Add to cart"){
       setAddToCart("Added to cart")
-      props.setCartProduct(props)
+      // props.setCartProduct(props)
     }
   //  console.log(props,"in productcarddddddd")
   }
