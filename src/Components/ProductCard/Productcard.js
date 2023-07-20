@@ -28,7 +28,7 @@ function Productcard(props) {
           <p className="card-text price">&#8377; {props.productPrice}</p>
           <p className="card-text detail">{props.productDetail}</p>
           <button 
-          onClick={()=>{props.setCartProduct(props);navigateTo("/cart")}} 
+          onClick={()=>{ if(AddToCart==="Added to cart"){navigateTo("/cart");return;};props.setCartProduct(props);navigateTo("/cart")}} 
           className="btn btn-primary">
             Buy Now
           </button>
